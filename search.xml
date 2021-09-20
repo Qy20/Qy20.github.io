@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title>帅哥</title>
-      <link href="/2021/08/27/shuai-ge/"/>
-      <url>/2021/08/27/shuai-ge/</url>
+      <title>基于Hexo的博客搭建</title>
+      <link href="/2021/09121.html"/>
+      <url>/2021/09121.html</url>
       
-        <content type="html"><![CDATA[<p>标题</p><p>内容</p><p>段落</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，<br>在几秒内，即可利用靓丽的主题生成静态网页。</p><h3 id="安装前准备工作"><a href="#安装前准备工作" class="headerlink" title="安装前准备工作"></a>安装前准备工作</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p><p>Node.js (Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本)<br>Git</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装以后，可以使用以下两种方式执行 Hexo：</p><p>npx hexo</p><p>将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用 hexo：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">'PATH="$PATH:./node_modules/.bin"'</span> <span class="token operator">&gt;&gt;</span> ~/.profile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="开始建站"><a href="#开始建站" class="headerlink" title="开始建站"></a>开始建站</h3><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo init <span class="token operator">&lt;</span>folder<span class="token operator">&gt;</span>$ <span class="token builtin class-name">cd</span> <span class="token operator">&lt;</span>folder<span class="token operator">&gt;</span>$ <span class="token function">npm</span> <span class="token function">install</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>新建完成后，指定文件夹的目录如下：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">.</span>├── _config.yml├── package.json├── scaffolds├── <span class="token builtin class-name">source</span><span class="token operator">|</span>   ├── _drafts<span class="token operator">|</span>   └── _posts└── themes<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="启动原始博客"><a href="#启动原始博客" class="headerlink" title="启动原始博客"></a>启动原始博客</h3><p>此时，通过 hexo s 命令即可在本地启动您的博客站点了。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">~ hexo sINFO  Start processingINFO  Hexo is running at http://localhost:4000 <span class="token builtin class-name">.</span> Press Ctrl+C to stop.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>后续再配置主题，并且部署博客</p>]]></content>
       
       
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建博客的个人感悟</title>
+      <link href="/2021/091052887.html"/>
+      <url>/2021/091052887.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="个人感悟"><a href="#个人感悟" class="headerlink" title="个人感悟"></a>个人感悟</h2><p>从有想法搭建博客到博客搭建成型，一路上磕磕绊绊，中途出了不少bug。<br>然后不断百度查看各种资料，bug一个一个的被解决。那种解决问题后的成就感十分足。</p><p>搭建这个博客的主要目的是记录一些平时写的文章和网络上有意思的文案，以及自学编程遇到的弯路经验教训。<br>通过搭建这个博客，让我明白我遇到的百分之九十的问题在网络上都能找到答案。</p><p>从暑假末尾开始搭建博客，一路上收获了成长和喜悦，并且在解决了一个个bug时自信心增长了不少。<br>整个博客搭建完全是由自己在网路上一步步摸索出来的，这也锻炼了我的自学能力。</p><p>后面会根据自己的技术提升不断完善博客。<br>如果你看到这篇文章有什么好的建议也可以留言板留言或者加我联系方式一起交流，共同成长。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -18,11 +55,17 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2021/08/27/hello-world/"/>
-      <url>/2021/08/27/hello-world/</url>
+      <link href="/2021/082716107.html"/>
+      <url>/2021/082716107.html</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
+      
+      <categories>
+          
+          <category> 说明 </category>
+          
+      </categories>
       
       
     </entry>

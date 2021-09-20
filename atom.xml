@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-27T13:22:05.526Z</updated>
+  <updated>2021-09-19T09:22:15.477Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,46 +17,74 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>帅哥</title>
-    <link href="http://example.com/2021/08/27/shuai-ge/"/>
-    <id>http://example.com/2021/08/27/shuai-ge/</id>
-    <published>2021-08-27T13:21:03.000Z</published>
-    <updated>2021-08-27T13:22:05.526Z</updated>
+    <title>基于Hexo的博客搭建</title>
+    <link href="http://example.com/2021/09121.html"/>
+    <id>http://example.com/2021/09121.html</id>
+    <published>2021-09-11T16:00:00.000Z</published>
+    <updated>2021-09-19T09:22:15.477Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;标题&lt;/p&gt;
-&lt;p&gt;内容&lt;/p&gt;
-&lt;p&gt;段落&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
     
     
     
+    <category term="博客搭建" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建博客的个人感悟</title>
+    <link href="http://example.com/2021/091052887.html"/>
+    <id>http://example.com/2021/091052887.html</id>
+    <published>2021-09-10T15:31:23.000Z</published>
+    <updated>2021-09-19T09:21:18.770Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习笔记" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/08/27/hello-world/"/>
-    <id>http://example.com/2021/08/27/hello-world/</id>
+    <link href="http://example.com/2021/082716107.html"/>
+    <id>http://example.com/2021/082716107.html</id>
     <published>2021-08-27T12:26:03.929Z</published>
-    <updated>2021-08-27T12:26:03.930Z</updated>
+    <updated>2021-09-15T11:24:46.700Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
     
     
+    
+    <category term="说明" scheme="http://example.com/categories/%E8%AF%B4%E6%98%8E/"/>
     
     
   </entry>

@@ -17,7 +17,7 @@
 
 
     <title>分类 | 盖茨比之屋</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -255,14 +255,32 @@
         <div class="brand">
             <div class="title center-align">
                 
-                盖茨比的解忧杂货铺
-                
+                    盖茨比的解忧杂货铺
+                        
             </div>
 
             <div class="description center-align">
                 
-                    <span id="jinrishici-sentence">正在加载今日诗词....</span>
-                
+                    <span id="subtitle"></span>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                    <script>
+                        var typed = new Typed("#subtitle", {
+                            strings: ['从来没有真正的绝境, 只有心灵的迷途',
+                                'Never really desperate, only the lost of the soul',
+                                '没有伞的孩子必须努力奔跑！',
+                                '欲望以提升热忱，毅力以磨平高山。',
+                                '如果放弃太早，你永远都不知道自己会错过什么。',
+                                '没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。',
+                                '鱼和熊掌不可兼得，单身和穷却可以',
+                                '生活会让你苦一阵子。等你适应后，再让你苦一辈子'],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            loop: true,
+                            backSpeed: 50,
+                            showCursor: true
+                    });
+                    </script>
+                    
             </div>
         </div>
     </div>
@@ -275,7 +293,7 @@
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
-
+ 
     </div>
 </div>
 
@@ -291,7 +309,34 @@
             </div>
             <div class="tag-chips">
                 
-                你目前还没有对文章进行分类.
+                
+                
+                <a href="/categories/%E8%AF%B4%E6%98%8E/" title="说明: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F9EBEA;">说明
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="学习笔记: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">学习笔记
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="博客搭建: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">博客搭建
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
                 
             </div>
         </div>
@@ -300,26 +345,128 @@
 
 
     
+    <style type="text/css">
+    #category-radar {
+        width: 100%;
+        height: 360px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="category-radar" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
+<script type="text/javascript">
+    let radarChart = echarts.init(document.getElementById('category-radar'));
+
+    
+
+    let option = {
+        title: {
+            left: 'center',
+            text: '文章分类雷达图',
+            textStyle: {
+                fontWeight: 500,
+                fontSize: 22
+            }
+        },
+        tooltip: {},
+        radar: {
+            name: {
+                textStyle: {
+                    color: '#3C4858'
+                }
+            },
+            indicator: [{"name":"说明","max":2},{"name":"学习笔记","max":2},{"name":"博客搭建","max":2}],
+            nameGap: 5,
+            center: ['50%','55%'],
+            radius: '66%'
+        },
+        series: [{
+            type: 'radar',
+            color: ['#3ecf8e'],
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data : [
+                {
+                    value : [1,1,1],
+                    name : '文章分类数量'
+                }
+            ]
+        }]
+    };
+
+    radarChart.setOption(option);
+</script>
+
+    
 
 </main>
 
 
                             <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8168441907"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2021</span>
             
-            <span id="year">2019</span>
+            <span id="year">2021</span>
             <a href="/about" target="_blank">Gatsby</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">79</span>&nbsp;字
+                class="white-color">677</span>&nbsp;字
             
             
             
@@ -348,11 +495,11 @@
                     var days = hours * 24;
                     var years = days * 365;
                     var today = new Date();
-                    var startYear = "2019";
-                    var startMonth = "6";
-                    var startDate = "28";
-                    var startHour = "0";
-                    var startMinute = "0";
+                    var startYear = "2021";
+                    var startMonth = "9";
+                    var startDate = "10";
+                    var startHour = "21";
+                    var startMinute = "47";
                     var startSecond = "0";
                     var todayYear = today.getFullYear();
                     var todayMonth = today.getMonth() + 1;
@@ -403,19 +550,21 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2772603414" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2772603414" data-position="top" data-delay="50">
+    <a href="https://qm.qq.com/cgi-bin/qm/qr?k=sgqIn2rBOLH9wO_gwNQOTNG7lyJ88jmt&noverify=0 " class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2772603414" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
 
 
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
+    <a href="https://u.wechat.com/MNFt70gjlBuCmTYin9o0ZMY" class="tooltipped" target="_blank" data-tooltip="微信联系我: Qeitsby" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
     </a>
+
+
+
+
+
+
 
 </div>
     </div>
@@ -617,7 +766,19 @@ $(function () {
                                                                                                                                         document.hidden ? (document.title = "ヽ(●-`Д´-)ノ你要玩捉迷藏嘛", clearTimeout(st)) : (document.title = "(Ő∀Ő3)ノ好哦！", st = setTimeout(function () { document.title = OriginTitile }, 3e3))
                                                                                                                                     })
                                                                                                                                 </script>
+<!--动态线条背景-->
+<script type="text/javascript"
+color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
 
-                </body>
+<script type="text/javascript">
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+    }
+    </script>
+    
+                <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":180,"height":360,"top":"-600px","left":"25px"},"mobile":{"show":true}});</script></body>
 
 </html>
