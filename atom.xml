@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-19T09:22:15.477Z</updated>
+  <updated>2021-09-21T15:29:53.152Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客搭建之配置matery主题（二）</title>
+    <link href="http://example.com/2021/092120456.html"/>
+    <id>http://example.com/2021/092120456.html</id>
+    <published>2021-09-20T16:00:00.000Z</published>
+    <updated>2021-09-21T15:29:53.152Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客搭建" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="matery" scheme="http://example.com/tags/matery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Hexo的博客搭建系列（一）</title>
+    <link href="http://example.com/2021/09121.html"/>
+    <id>http://example.com/2021/09121.html</id>
+    <published>2021-09-11T16:00:00.000Z</published>
+    <updated>2021-09-21T14:55:28.539Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客搭建" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>基于Hexo的博客搭建</title>

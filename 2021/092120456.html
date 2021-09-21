@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="musics, 个人成长|分享喜乐">
+    <meta name="keywords" content="博客搭建之配置matery主题（二）, 个人成长|分享喜乐">
     <meta name="description" content="莫道桑榆晚 · 为霞尚满天">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>musics | 盖茨比之屋</title>
+    <title>博客搭建之配置matery主题（二） | 盖茨比之屋</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Qy20/blogcdn/source/libs/awesome/css/all.css">
@@ -252,12 +252,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Qy20/blogcdn/source/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Qy20/blogcdn/source/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">musics</h1>
+                    <h1 class="description center-align post-title">博客搭建之配置matery主题（二）</h1>
                 </div>
             </div>
         </div>
@@ -371,12 +371,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/matery/">
+                                <span class="chip bg-color">matery</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                博客搭建
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -385,7 +398,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-28
+                    2021-09-21
                 </div>
                 
 
@@ -394,14 +407,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -424,7 +437,91 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a>是一个采用 Material Design 和响应式设计的 Hexo 博客主题，<br>点击<a target="_blank" rel="noopener" href="https://qy20.github.io/">这里</a>可以查看示例效果。点击<a target="_blank" rel="noopener" href="https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master">master</a>下载主题分支的最新稳定版的代码。<br>解压缩后，将 hexo-theme-matery 的文件夹复制到 Hexo 的 themes 文件夹中即可。</p>
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>修改 Hexo 根目录下的 _config.yml 的 theme 的值：theme: hexo-theme-matery</p>
+<p>·_config.yml 文件的其它修改建议:<br>·请修改 _config.yml 的 url 的值为你的网站主 URL（如：<a target="_blank" rel="noopener" href="http://xxx.github.io)./">http://xxx.github.io）。</a><br>·建议修改两个 per_page 的分页条数值为 6 的倍数，如：12、18 等，这样文章列表在各个屏幕下都能较好的显示。<br>·如果是中文用户，则建议修改 language 的值为 zh-CN。</p>
+<h3 id="新建分类页categories"><a href="#新建分类页categories" class="headerlink" title="新建分类页categories"></a>新建分类页categories</h3><p>categories页是用来展示所有分类的页面，如果 source 目录下还没有 categories/index.md 文件，那么就需要新建一个，打开命令板(win+r)输入命令如下：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new page <span class="token string">"categories"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑你刚刚新建的页面文件 /source/categories/index.md，至少需要以下内容：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
+title: categories
+date: <span class="token number">2018</span>-09-30 <span class="token number">17</span>:25:30
+type: <span class="token string">"categories"</span>
+layout: <span class="token string">"categories"</span>
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="新建标签-tags-页"><a href="#新建标签-tags-页" class="headerlink" title="新建标签 tags 页"></a>新建标签 tags 页</h3><p>tags 页是用来展示所有标签的页面，如果 source 目录下还没有 tags/index.md 文件，那么就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new page <span class="token string">"tags"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑刚刚新建的页面文件 /source/tags/index.md，至少需要以下内容：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
+title: tags
+date: <span class="token number">2018</span>-09-30 <span class="token number">18</span>:23:38
+type: <span class="token string">"tags"</span>
+layout: <span class="token string">"tags"</span>
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="新建关于我-about-页"><a href="#新建关于我-about-页" class="headerlink" title="新建关于我 about 页"></a>新建关于我 about 页</h3><p>about 页是用来展示关于我和我的博客信息的页面，如果 source 目录下还没有 about/index.md 文件，那么就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new page <span class="token string">"about"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑刚刚新建的页面文件 /source/about/index.md，至少需要以下内容：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
+title: about
+date: <span class="token number">2018</span>-09-30 <span class="token number">17</span>:25:30
+type: <span class="token string">"about"</span>
+layout: <span class="token string">"about"</span>
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="新建友情连接-friends-页（可选的）"><a href="#新建友情连接-friends-页（可选的）" class="headerlink" title="新建友情连接 friends 页（可选的）"></a>新建友情连接 friends 页（可选的）</h3><p>friends 页是用来展示友情连接信息的页面，如果 source 目录下还没有 friends/index.md 文件，那么就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new page <span class="token string">"friends"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>编辑刚刚新建的页面文件 /source/friends/index.md，至少需要以下内容：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
+title: friends
+date: <span class="token number">2018</span>-12-12 <span class="token number">21</span>:25:30
+type: <span class="token string">"friends"</span>
+layout: <span class="token string">"friends"</span>
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>同时，在 source 目录下新建 _data 目录，在 _data 目录中新建 friends.json 文件，文件内容如下所示：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token string">"avatar"</span><span class="token builtin class-name">:</span> <span class="token string">"https://qy20.github.io/medias/avatar.jpg"</span>,
+    <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"盖茨比之物"</span>,
+    <span class="token string">"introduction"</span><span class="token builtin class-name">:</span> <span class="token string">"莫道桑榆晚·为霞尚满天。"</span>,
+    <span class="token string">"url"</span><span class="token builtin class-name">:</span> <span class="token string">"https://qy20.github.io/"</span>,
+    <span class="token string">"title"</span><span class="token builtin class-name">:</span> <span class="token string">"前去参观"</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面的友情链接也可以继续添加，以上展示的为模板。</p>
+<h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><p>由于 Hexo 自带的代码高亮主题显示不好看，所以主题中使用到了 hexo-prism-plugin 的 Hexo 插件来做代码高亮，安装命令如下：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i -S hexo-prism-plugin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后，修改 Hexo 根目录下 _config.yml 文件中 highlight.enable 的值为 false，并新增 prism 插件相关的配置，主要配置如下：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">highlight:
+  enable: <span class="token boolean">false</span>
+
+prism_plugin:
+  mode: <span class="token string">'preprocess'</span>    <span class="token comment"># realtime/preprocess</span>
+  theme: <span class="token string">'tomorrow'</span>
+  line_number: <span class="token boolean">false</span>    <span class="token comment"># default false</span>
+  custom_css:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>本主题中还使用到了 hexo-generator-search 的 Hexo 插件来做内容搜索，安装命令如下：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-search --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在 Hexo 根目录下的 _config.yml 文件中，新增以下的配置项：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">search:
+  path: search.xml
+  field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="修改社交链接"><a href="#修改社交链接" class="headerlink" title="修改社交链接"></a>修改社交链接</h3><p>在主题的 _config.yml 文件中，默认支持 QQ、GitHub 和邮箱的配置，可以在主题文件的 /layout/_partial/social-link.ejs 文件中，新增、修改需要的社交链接地址，增加链接可参考如下代码：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token operator">&lt;</span>a <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">"https://github.com/blinkfox"</span> <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">"tooltipped"</span> <span class="token assign-left variable">target</span><span class="token operator">=</span><span class="token string">"_blank"</span> data-tooltip<span class="token operator">=</span><span class="token string">"访问我的GitHub"</span> data-position<span class="token operator">=</span><span class="token string">"top"</span> data-delay<span class="token operator">=</span><span class="token string">"50"</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>i <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">"fa fa-github"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/i<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/a<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>其中，社交图标（如：fa-github）可以在 <a target="_blank" rel="noopener" href="https://fontawesome.com/icons">Font Awesome</a> 中搜索找到。以下是常用社交图标的标识，供参考：</p>
+<p>·Facebook: fa-facebook<br>·Twitter: fa-twitter<br>·Google-plus: fa-google-plus<br>·Linkedin: fa-linkedin<br>·Tumblr: fa-tumblr<br>·Medium: fa-medium<br>·Slack: fa-slack<br>·新浪微博: fa-weibo<br>·微信: fa-wechat<br>·QQ: fa-qq</p>
+<h3 id="修改打赏的二维码图片"><a href="#修改打赏的二维码图片" class="headerlink" title="修改打赏的二维码图片"></a>修改打赏的二维码图片</h3><p>在主题文件的 source/medias/reward 文件中，可以替换成你的的微信和支付宝的打赏二维码图片。</p>
+<h3 id="文章链接转静态短地址（建议安装）"><a href="#文章链接转静态短地址（建议安装）" class="headerlink" title="文章链接转静态短地址（建议安装）"></a>文章链接转静态短地址（建议安装）</h3><p>如果文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 SEO，且 gitment 评论对中文链接也不支持。<br>我们可以用 hexo-permalink-pinyin Hexo 插件生成文章时生成中文拼音的永久链接，或者用hexo-abbrlink 生成静态文章链接。以下结合hexo-abbrlink生成类似 /yyyy/mmdd+随机数.html 的文章链接地址。</p>
+<p>安装命令如下：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-abbrlink --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在 Hexo 根目录下的 _config.yml 文件中，修改 permalink: ，并在文件末尾新增 abbrlink:配置项：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">permalink: :year/:month:day:abbrlink.html
+
+abbrlink: 
+  alg: crc16 <span class="token comment">#算法选项：crc16丨crc32</span>
+  rep: dec <span class="token comment">#输出进制：dec为十进制，hex为十六进制</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
                 
             </div>
             <hr/>
@@ -440,7 +537,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Gatsby</a>
+                    <a href="/about" rel="external nofollow noreferrer">J.Gatsby</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -450,7 +547,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/musics/index-1.html">http://example.com/musics/index-1.html</a>
+                    <a href="http://example.com/2021/092120456.html">http://example.com/2021/092120456.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -463,7 +560,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Gatsby</a>
+                    <a href="/about" target="_blank">J.Gatsby</a>
                     !
                 </span>
             </div>
@@ -487,7 +584,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/matery/">
+                                    <span class="chip bg-color">matery</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -992,13 +1093,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/musics/index-1.html">
+                <a href="/2021/092120456.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Qy20/blogcdn/source/medias/featureimages/10.jpg" class="responsive-img" alt="musics">
+                        <img src="https://cdn.jsdelivr.net/gh/Qy20/blogcdn/source/medias/featureimages/3.jpg" class="responsive-img" alt="博客搭建之配置matery主题（二）">
                         
-                        <span class="card-title">musics</span>
+                        <span class="card-title">博客搭建之配置matery主题（二）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1009,17 +1110,29 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-21
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Gatsby
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                    博客搭建
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/matery/">
+                        <span class="chip bg-color">matery</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1027,16 +1140,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/musics/index-1.html">
+                <a href="/2021/09121.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Qy20/blogcdn/source/medias/featureimages/10.jpg" class="responsive-img" alt="musics">
+                        <img src="https://cdn.jsdelivr.net/gh/Qy20/blogcdn/source/medias/featureimages/20.jpg" class="responsive-img" alt="基于Hexo的博客搭建系列（一）">
                         
-                        <span class="card-title">musics</span>
+                        <span class="card-title">基于Hexo的博客搭建系列（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1047,17 +1160,28 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-12
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Gatsby
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                    博客搭建
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
